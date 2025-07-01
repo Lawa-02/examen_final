@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box; /* Hace que el padding y borde se incluyan en el ancho total */
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif; /* Tipo de letra general */
+  background-color: #f4d1ff; /* Fondo rosado claro */
+  margin: 0; /* Elimina margen por defecto */
+  padding: 20px; /* Espacio alrededor del contenido */
+  color: #333; /* Color del texto */
+}
+
+.container {
+  max-width: 960px; /* Ancho máximo del contenedor */
+  margin: 0 auto 30px auto; /* Centrado horizontal y espacio abajo */
+  background: white; /* Fondo blanco */
+  padding: 30px; /* Espaciado interno */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  text-align: center; /* Centra todo el texto dentro */
+}
+
+h1, h2 {
+  color: #003366; /* Color azul oscuro para los títulos */
+  margin-top: 0; /* Elimina margen superior */
+}
+
+form {
+  display: flex; /* Usa flexbox para alinear los campos */
+  justify-content: center; /* Centra horizontalmente los campos */
+  gap: 10px; /* Espacio entre los campos */
+  flex-wrap: wrap; /* Permite que los campos bajen si no entran */
+  margin-top: 20px; /* Espacio encima del formulario */
+}
+
+input {
+  padding: 10px; /* Espacio interno del input */
+  width: 80px; /* Ancho del campo */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+button {
+  padding: 10px 20px; /* Tamaño del botón */
+  background-color: #007bff; /* Azul fuerte */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+.triangle-result {
+  display: flex; /* Flexbox para organizar la imagen y resultados */
+  flex-direction: column; /* Todo se pone en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  margin-top: 20px; /* Espacio arriba de esta sección */
+}
+
+#textoResultados {
+  display: grid; /* Usa grid para organizar las tarjetas */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Acomoda hasta 3 columnas si entra */
+  gap: 20px; /* Espacio entre las cajas */
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  margin-top: 20px; /* Espacio arriba de los resultados */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 960px; /* Límite de ancho */
+}
+
+/* Estilo para cada grupo de resultados (ángulos, áreas, etc.) */
+.result-box {
+  background-color: #f9f9ff; /* Fondo gris muy claro */
+  border: 1px solid #ccddee; /* Borde celeste suave */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 15px 20px; /* Espacio dentro de la caja */
+  margin-bottom: 15px; /* Espacio debajo de la caja */
+  width: 100%; /* Ancho completo disponible */
+  max-width: 600px; /* No se hace más ancha que esto */
+  text-align: left; /* Texto alineado a la izquierda */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Sombra muy suave */
+}
+
+.result-box h3 {
+  margin: 0 0 10px 0; /* Espacio solo debajo del título */
+  color: #003366; /* Azul oscuro */
+  font-size: 18px; /* Tamaño del título */
+  border-bottom: 1px solid #ccddee; /* Línea decorativa debajo del título */
+  padding-bottom: 5px; /* Espacio entre texto y línea */
+}
+
+.result-box p {
+  margin: 4px 0; /* Pequeño espacio entre párrafos */
+  font-size: 15px; /* Tamaño de letra del contenido */
+}

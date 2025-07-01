@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!-- Define que es un documento HTML5 -->
+<html lang="es"> <!-- Idioma del contenido en español -->
+<head>
+  <meta charset="UTF-8" /> <!-- Codificación de caracteres en UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Hace que se vea bien en celulares -->
+  <title>examen_final</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link href="./css/dw.css" rel="stylesheet" /> <!-- Enlaza con el archivo CSS externo -->
+</head>
+<body>
+  <!-- Contenedor principal donde va el título y el formulario -->
+  <div class="container">
+    <h1>Calculadora Integral de Tri&aacute;ngulos</h1> <!-- Título principal -->
+    <p>An&aacute;lisis completo de un tri&aacute;ngulo a partir de sus tres lados</p> <!-- Subtítulo o descripción -->
+
+    <!-- Formulario para ingresar los lados del triángulo -->
+    <form id="triangleForm">
+      <!-- Campo para lado a -->
+      <label>Lado a: <input type="number" id="ladoA" required step="0.01" /></label>
+      <!-- Campo para lado b -->
+      <label>Lado b: <input type="number" id="ladoB" required step="0.01" /></label>
+      <!-- Campo para lado c -->
+      <label>Lado c: <input type="number" id="ladoC" required step="0.01" /></label>
+      <!-- Botón que ejecuta el cálculo -->
+      <button type="submit">Calcular</button>
+    </form>
+  </div>
+
+  <!-- Segundo contenedor donde aparece la imagen y los resultados -->
+  <div class="container">
+    <h2>Resultados</h2> <!-- Título para la sección de resultados -->
+
+    <!-- Contenedor que agrupa la imagen del triángulo y los resultados -->
+    <div class="triangle-result">
+      <img src="triangulo.jpg" alt="Triángulo" width="400" /> <!-- Imagen decorativa del triángulo -->
+
+      <!-- Aquí se insertarán los resultados con JavaScript -->
+      <div id="result" class="output">
+        <div id="textoResultados" class="text-card"> <!-- Contenedor para los resultados -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Archivo JavaScript donde están las funciones de cálculo -->
+  <script src="./js/dw.js"></script>
+</body>
+</html>
+
